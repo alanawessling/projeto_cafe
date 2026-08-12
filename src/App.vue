@@ -9,7 +9,7 @@ var cafes = ref([ { nome: 'Café Especial', produtor: 'José', nota: 9.8 },
  { nome: 'Café da Serra', produtor: 'Maria', nota: 9.5 },
  { nome: 'Café do Vale', produtor: 'Pedro', nota: 9.2 } ])
 
-function adicionarCafe(cafe) { 
+function addCafe(cafe) { 
 cafes.value.push(cafe) 
 pagina.value = 'ranking' 
 }
@@ -24,8 +24,19 @@ pagina.value = 'ranking'
     <button @click="pagina = 'ranking'"> Ranking </button> 
   </div>
 
+  <Home v-if="pagina == 'home'"
+  @pagAvaliacao="pagina = 'avaliacao'"
+  @pagRanking="pagina = 'ranking'" 
+  /> 
+  
+  <Avaliacao v-if="pagina == 'avaliacao'"
+  @addCafe="addCafe" 
+  />
+  <Ranking v-if="pagina == 'ranking'" 
+  :cafes="cafes" 
+  />
+
 </template>
 
 <style scoped>
-
 </style>

@@ -35,7 +35,7 @@ function salvar() {
       
       <input v-model="nome" type="text" placeholder="Nome do café" /> 
       <input v-model="prod" type="text" placeholder="Nome do produtor" /> 
-      <input v-model="nota" type="number" min="0" step="0.1" placeholder="Nota" />
+      <input v-model="nota" type="number" min="0" max="10" step="0.1" placeholder="Nota" />
       
       <button @click="salvar"> Enviar avaliação </button> 
       <p v-if="msg"> {{ msg }} </p> 

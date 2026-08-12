@@ -41,5 +41,5 @@ function salvar() {
       <p v-if="msg"> {{ msg }} </p> 
 </div> 
 </template>
-
-  
+<style scoped>
+</style>

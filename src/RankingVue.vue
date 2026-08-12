@@ -36,4 +36,4 @@ cafes.length = 10
 </div>
 
 </template>
-
+<style scoped></style>

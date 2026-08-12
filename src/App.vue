@@ -39,4 +39,19 @@ pagina.value = 'ranking'
 </template>
 
 <style scoped>
+body { 
+  margin: 0; 
+  font-family: Arial; 
+  }
+div { 
+  background: white;
+  padding: 15px; 
+  text-align: center; 
+  }
+  div button { 
+  background: none; 
+  border: none; 
+  margin: 5px 10px; 
+  padding: 8px; 
+  } 
 </style>

@@ -17,17 +17,12 @@ for (var i = 0; i < cafes.length; i++) {
     }
   }
 }
-
-if (cafes.length > 10) {
-
-cafes.length = 10
-}
 </script>
 <template>
 
 <div class="ranking">
 
-  <h1>Top 10 Cafés</h1>
+  <h1>Ranking dos Cafés</h1>
 
   <div v-for="(cafe, i) in cafes" :key="i" class="cafe">
 
